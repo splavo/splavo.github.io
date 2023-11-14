@@ -49,11 +49,6 @@ function draw() {
     textAlign(CENTER)
     text('Try to catch the dots. They will get smaller as you go!',width/2, height - 270)
 
-    fill(255)
-    textSize(10)
-    textAlign(CENTER)
-    textStyle(ITALIC)
-    text('by Spencer Plavoukos', width/2, height - 20)
   }
   startButton.mousePressed(function go() {
     started = true;

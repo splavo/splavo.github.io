@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Websites</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #title {
+                text-align: center;
+                font-size: 3rem;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Websitesa</h1>
+        
+        <div id="card-container">
+            <a href="#">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="Project 1">
+                    <h3>CampusCollab</h3>
+                    <p>campus description</p>
+                </div>
+            </a>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+    <style>
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card img {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+    </style>
+</html>

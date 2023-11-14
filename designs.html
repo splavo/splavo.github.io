@@ -5,64 +5,64 @@
   <head>
     <title>Grid Gallery</title>
     <style>
-      /* Style the grid container */
-      .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
-      }
+          /* Style the grid container */
+          .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
 
-      /* Style the grid items */
-      .grid-item {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-      }
+        /* Style the grid items */
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
 
-      /* Style the modal */
-      .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.9);
-      }
+        /* Style the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
 
-      /* Style the modal content */
-      .modal-content {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-      }
+        /* Style the modal content */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
 
-      /* Style the close button */
-      .close {
-        color: #fff;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-      }
+        /* Style the close button */
+        .close {
+            color: #fff;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-      .close:hover,
-      .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
-      }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-      /* Style the image inside the modal */
-      .modal-content img {
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-      }
+        /* Style the image inside the modal */
+        .modal-content img {
+            margin: auto;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
     </style>
   </head>
   <body>
@@ -80,7 +80,7 @@
       </div>
       <div class="grid-item">
         <img
-          src="designs/wakeflag.pdf"
+          src="designs/wakeflag.jpg"
           alt="Wake Forest Flag"
           onclick="openModal('designs/wakeflag.pdf')"
         />
@@ -115,9 +115,9 @@
       </div>
       <div class="grid-item">
         <img
-          src="designs/zip.pdf"
+          src="designs/zip.jpg"
           alt="Image 7"
-          onclick="openModal('designs/zip.pdf')"
+          onclick="openModal('designs/zip.jpg')"
         />
       </div>
     </div>
