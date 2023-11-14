@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNIST Neural Network Project</title>
+    <style>
+        body {
+            font-family: 'Consolas', 'Monaco', 'Andale Mono', 'Courier New', monospace;
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4ec9b0;
+        }
+
+        p {
+            color: #d4d4d4;
+        }
+
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #2d2d2d;
+            color: #d4d4d4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<h1>AI Cover Letter Writer</h1>
+
+<p>Below is the code for my MNIST neural network project:</p>
+
+<code>
+    import openai
+
+    openai.api_key = "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"
+
+    name = input("Full Name: ")
+    skills = input("Skills: ")
+    experience = input("Experience: ")
+    position = input("Position Applying For: ")
+
+    personinputs = {
+        "name": name,
+        "skills": skills,
+        "experience": experience,
+        "position": position
+    }
+
+    response = openai.Completion.create(
+        model="text-davinci-002",
+        prompt="create a cover letter for {name}. They are applying for the position of {position}. Their skills are: {skills}. They previously worked as a: {experience}.".format(name=personinputs['name'], skills=personinputs['skills'], experience=personinputs['experience'], position=personinputs['position']),
+        temperature=0,
+        max_tokens=200,
+        top_p=1,
+        frequency_penalty=0,
+        presence_penalty=0
+    )
+
+    print(response.choices[0].text)
+</code>
+
+</body>
+<h4>LINK TO WRITER</h4>
+</html>
